@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    padding: 2%;
+    text-justify: auto;
+    text-align: center;
+    margin: 3px;
+
+
+    
+}
+a:hover{
+    font-weight: bold;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: rgb(177, 177, 177);
+}
+
+.profile_name {
+    font-family: verdana;
+    font-size: 20px;
+    float: left;
+    padding-left: 2cm;
+}
+.top_menu{
+    background-color: lightgray;
+    height: 1.5cm;
+}
+
+.container {
+    display: flex;
+  }
+
+.left{
+    float: left;
+    padding-left: 1cm;
+}
+.right{
+    float: right;
+    width:200px;
+    padding-right: 1cm;
+}
+
+.center {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+.all_skills {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+ /*style des skills*/
+ .skills {
+    border: 1px solid gray;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 1.5in;
+    font-size: 20px;
+    box-shadow: 0 3px 10px gray;
+  }
+  .skills:hover{
+    border: 1px solid gray;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 1.5in;
+    font-size: 20px;
+    box-shadow: 0 3px 10px gray;
+    background-color: rgb(214, 214, 214);
+    cursor: pointer;
+  }
