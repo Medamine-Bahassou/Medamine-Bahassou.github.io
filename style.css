@@ -20,12 +20,14 @@ h2 {
     text-justify: auto;
     text-align: center;
     margin: 3px;
+    text-decoration:none;
 }
 #top a:hover{
     font-weight: bold;
     border-radius: 5%;
     padding: 2%;
     background-color: rgb(177, 177, 177);
+    text-decoration:none;
 }
 
 .profile_name {
