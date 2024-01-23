@@ -6,6 +6,9 @@ h2 {
     color: #000000;
     
   }
+  .navv{
+    color: white;
+  }
 .about{
     margin: 10%;
     text-align: justify;
@@ -15,6 +18,7 @@ h2 {
 }
 #top a{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
     font-style: normal;
     padding: 2%;
     text-justify: auto;
@@ -23,6 +27,7 @@ h2 {
     text-decoration:none;
 }
 #top a:hover{
+  color: white;
     font-weight: bold;
     border-radius: 5%;
     padding: 2%;
@@ -89,4 +94,16 @@ h2 {
     box-shadow: 0 3px 10px gray;
     background-color: rgb(214, 214, 214);
     cursor: pointer;
+  }
+  .an {
+    animation-name: x;
+    animation-duration: 2s;
+  }
+  @keyframes x {
+    from{ 
+        translate: 0 50px ;
+    }
+    to{
+        translate: 0 0;
+    }
   }
