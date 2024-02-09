@@ -1,228 +1,245 @@
 *{
     padding: 0;
     margin: 0;
-    scroll-behavior:smooth;
-}
-body{
-    color: whitesmoke;
-    background-color: black;
-    font-family: 'Cairo';
-    
-   
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'cairo';
+    scroll-behavior: smooth;
 }
 
-.home{
-    min-height: 100vh;
+
+#navbar{
+    background-color: rgb(0, 0, 0);
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://wallpaper.dog/large/5438660.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    
-}
-#option{
-    float: left;
-    padding-left: 25px;
-    cursor: pointer;
-}
-/*style for hover*/
-#option img , a{
-    opacity: 0.8;
-}
-#option img:hover , a:hover{
-    opacity: 1;
-}
-#nav_bar{
+    position: fixed; 
     display: flex;
     justify-content: space-between;
-    padding: 50px;
-    width: auto;
+    align-items: center;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 9999;
+}
+#btn ul{
+    display: flex;
+    flex-direction: row;
+}
+#btn li{
+    margin-left: 10px;
+    list-style: none;
+    color: rgb(252, 252, 252);
+    margin-left: 20px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+}
+#btn a{
+    color : rgb(255, 255, 255) ; 
+}
+#btn a:hover {
+    color : rgba(255, 255, 255, 0.733) ; 
+
 }
 
-#nav_bar a {
-    font-size: medium;
-    color: whitesmoke;
-    text-decoration: none;
-    padding: 15px;
-    float:right;
-    border: 0.5px solid white;
-    margin-left: 10px;
-    border-radius: 5px;
+#btn  li:hover{
+    cursor: pointer;
+
+
 }
-#nav_bar a:hover {
-    font-size: medium;
-    color: whitesmoke;
-    text-decoration: none;
-    border: 0.5px solid white;
-    border-radius: 5px;
-    background-color: rgba(31, 161, 247, 0.267);
-    margin-left: 10px;
-    float:right;
-}
-#profile {
-    align-content: center;
-    width: 100%;
-    margin: 0 auto;
+
+ #home{
+    min-height: 100vh;
     
-   
-}
-#profile h3 {
-    font-size:100px ;
+ }
+
+
+.container{
+    display: flex ; 
+    justify-content: space-between;
+    padding-top: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-#all_skills {
+#skills-section{
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#skills{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    text-align: center;
-    justify-content:center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+#skill{
+    border-radius: 20px;
+    border:2px solid rgb(206, 205, 205);
+    background-color: rgb(241, 245, 248);
+    box-shadow: 0 3px 10px gray;
+    height: 130px;
+    width: 130px;
     align-items: center;
-    padding: 100px;
-    
-}
-.skill {
-    background-color: black;
-    border-radius: 8px;
-    border: 0.5px solid rgba(8, 102, 190, 0.918) ;
-    padding: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.918) ;
-    display: block;
-    text-align: center;
+    overflow: hidden;
     margin: 10px;
-    transition: transform .2s;
-    
-}
-.skill:hover {
-    background-color: black;
-    border-radius: 8px;
-    border: 0.5px solid rgba(8, 102, 190, 0.918) ;
     padding: 10px;
-    box-shadow: 0 3px 10px rgba(0, 69, 133, 0.918) ;
-    display: block;
+    transition:.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 80%;
+}
+#skill:hover{
+    transform: scale(1.02);
+}
+#project-section{
+    min-height: 100vh;
+}
+#project-section h1{
     text-align: center;
-    margin: 10px;
-    cursor: pointer;
-    transform: translate(0px,-10px);
-}
+    padding-top: 5%;
 
-@keyframes k {
-    from{
-        translate:0 0 ;
-    }
-    to{
-        translate:0 -30px ;
-    }
 }
-
-.two{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgb(3, 0, 7),rgba(2, 4, 10, 0.7)),url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    margin-top: 50px;
-}
-
-.three{
-    min-height: 100vh;
-    background-image: linear-gradient(rgb(3, 0, 7),rgba(2, 4, 10, 0.7)),url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdCUyMHRlYW18ZW58MHx8MHx8fDA%3D);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    margin-top: 50px;
-}
-.four{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgb(3, 0, 7),rgba(2, 4, 10, 0.7)),url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdCUyMHRlYW18ZW58MHx8MHx8fDA%3D);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    margin-top: 50px;
-}
-
-
-  .formpop{
-    display: none;
-    height: 100px; 
-    background-color: blue;
-    position: fixed; 
- 
-   
-  }
-  .popup{
-    position: fixed; 
-    width: 500px; 
-    height: 100%; 
-    background-color:rgba(0, 0, 0, 0.918);
-    border-radius: 2px;
-    border:  1px;
-    box-shadow: 0 3px 10px rgba(190, 220, 248, 0.918) ;
-    opacity: 0.8;
-    animation-name: i;
-    animation-duration: 0.5s;
-}
-
-@keyframes i {
-    from{
-        translate: -100% 0 ;
-    }
-    to{
-        translate: 0 0 ;
-    }
-}
-
-#all_projects{
-    display: flex ;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center;
-    justify-content:center;
-    align-items: center;
+#projects{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        min-height: 100vh;
 
 }
 
-.project{
+#project{
     background-color: rgb(49, 49, 49);
     border: 0.5px sorgba(0, 30, 58, 0.438);
     box-shadow: 0 10px 10px rgba(0, 13, 26, 0.479) ;
     border-radius: 8px;
-    height: 500px;
+    height: 50vh;
     flex-basis: 25%;
     overflow: hidden;
     position: relative;
-    margin: 2%;
+    margin: 20px;
+    text-align: center;
+}
+
+#project img{
+    top: 0;
+    width:100%; 
+    height:100% ;
+    padding: 15px;
+    padding: 0;
+    
+}
+#project p{
+    width: 100%;
+    height: 50vh;
+    top: 0 ;
+    padding-top: 10%;
+    position: absolute;
+    padding: 5%;
+    color: rgba(0, 0, 0, 0);
     transition: .2s;
 }
-.project:hover{
-    background-color: rgb(49, 49, 49);
-    border: 0.5px sorgba(0, 30, 58, 0.438);
-    box-shadow: 0 10px 10px rgba(0, 13, 26, 0.479) ;
-    border-radius: 8px;
-    height: 500px;
-    flex-basis: 25%;
-    overflow: hidden;
-    position: relative;
-    margin: 2%;
+#project p:hover{
+    top: 0 ;
+    padding-top: 10%;
+    position: absolute;
+    background-color:  rgba(255, 255, 255, 0.582);
+    padding: 5%;
+    height: 400px;
+    color: black;
+    backdrop-filter: blur(1.5rem);
     cursor: pointer;
-    transform: translate(0px,-10px);
-}
-.project img{
-    top: 0;
-    width: 100%;
-    height: 100%;
-;}
-.project a{
-    width:5px;
-    height:5px;
 }
 
-.project ol{
-    padding-top: 10%;
+#project source{
+    top: 0;
+    position: absolute;
 }
-.project svg{
-    float: right ;
-    padding-top: 15%;
-    padding-right: 5%;
+
+
+
+#about-section{
+    background-color: rgb(0, 0, 0);
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact img{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    
+    #navbar h1{
+        font-size: medium;
+    }
+    #logo h1{
+        color: red;
+        animation-name:test;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes test {
+        0%{
+            color : white ; 
+        }
+        30%{
+            color: rgb(255, 0, 0) ; 
+        }
+        100%{
+            color: white;
+        }
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: flex ; 
+        flex-direction: column;
+        align-items: center;
+    }
+    #hello{
+        margin-bottom: 80px;
+    }
+    #skills{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #skills-section{
+        padding-top: 150px;
+    }
+    #skill{
+        width: auto;
+        align-items: center;
+        overflow: hidden;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+    }
+    #project-section{
+        padding-top: 150px;
+    }
+    #project{
+        flex-basis: 80%;    
+    }
+    
+
 }
