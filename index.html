@@ -5,38 +5,56 @@
     <meta property="og:Mohamed Amine BAHASSOU - Portfolio" content="Mohamed Amine BAHASSOU - Portfolio" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
-    <script type="text/javascript" src="java.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+
 </head>
 <body>
     <div id="navbar">
         <div id="logo">
-            <h1>Mohamed Amine Bahassou</h1>
+            <a href="#"><h1 style="color: var(--primary-color);">Mohamed Amine Bahassou</h1></a>
         </div>
         <div id="btn">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#skills-section">Skills</a></li>
                 <li><a href="#project-section">Projects</a></li>
+                <li><a href="#certification-section">Certification</a></li>
                 <li><a href="#about-section">About</a></li>
+                <i class="fa-solid fa-moon" id="icon" style="cursor: pointer; margin-left: 20px;align-self: center;"></i>
+
             </ul>
         </div>
     </div>
+    <script>
+        var icon = document.getElementById("icon") ; 
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme") ;
+            if(document.body.classList.contains("dark-theme")){
+            icon.classList = "fa-solid fa-sun" ; 
+            }else{
+            icon.classList = " fa-solid fa-moon" ; 
+        } 
+        }
+        
+    </script>
     <div id="home">
         <div class="container">
             <div id="hello" style="width: auto ;" >
-                <img src="https://images.emojiterra.com/google/android-pie/512px/1f44b.png" width="50px">
+                <i class="fa-solid fa-hands" style="color: #FFD43B; font-size: 60px;"></i>
                 <h1>Hello, I'm Bahassou</h1>
                 <h3>Computer Science Student</h3>
                 <p>I am a first-year student in the Software and Intelligent Systems program at the Faculty of Science and Technology. I have been passionate about computers and new technologies since I was a child. I have always been fascinated by how computers can be used to solve complex problems and create new and innovative things.</p>
             </div>
             <div id="cover" >
-                <img src="https://sky.pro/media/wp-content/webp-express/webp-images/uploads/2022/02/glavnaya-5.png.webp" width="400px">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="300px">
             </div>
         </div>
     </div>
     <div id="skills-section">
-        <h1>Skills</h1>
+        <h1><i class="fa-solid fa-code" style="color: var(--secondary-color);"></i> Skills </h1>
         <div id="skills">
             <div id="skill">
                 <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" width="20px">
@@ -70,42 +88,55 @@
                 <h3>C#</h3>
             </div>
         </div>
+        
     </div>
     <div id="project-section">
-        <h1>Projects</h1>
+        <h1><i class="fa-solid fa-paperclip" style="color: var(--secondary-color);"></i> Projects</h1>
         <div id="projects">
             <div id="project">
                 <div class="center">
+                    
                 <img src="https://c.clc2l.com/c/thumbnail280/t/q/t/qt-creator-zOz9gO.png">
                 </div>
-                <a target="_blank" href="https://github.com/Medamine-Bahassou/Gestion-de-departement-Genie-Informatique">
+
                     <div id="description">
                         <p>Gestion de département Genie Informatique : <br>
                             +using Qt creator 
                         </p>
+                        <a class="github" target="_blank" href="https://github.com/Medamine-Bahassou/Gestion-de-departement-Genie-Informatique"><i class="fa-brands fa-github"></i></a>
                     </div>
-                </a>
+                    
+                
             </div>
             <div id="project">
                 <div class="center">
                 <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/341563401/original/20e76800e6bf232447d828757be3d4e24d4c1c70/do-your-matlab-programming-simulink-image-and-gui-projects.jpg">
                 </div>
-                <a  href="">
+                
                     <div id="description">
                         <p>Methode de Gauss Newton : <br> + using MATLAB </p>
+                        <a class="github" target="_blank" href="https://github.com/Medamine-Bahassou/Gestion-de-departement-Genie-Informatique"><i class="fa-brands fa-github"></i></a>
                     </div>
-                </a>
+                
             </div>
         </div>
     </div>
-    <div id="certification">
-        <!-- SOON! -->
+    <div id="certification-section">
+        <h1><i class="fa-solid fa-certificate" style="color: var(--secondary-color);"></i> Certification</h1>
+        <div id="certifications">
+            <div id="certification">
+                <img src="https://media.licdn.com/dms/image/D4E2DAQHpZpL5TPSm5Q/profile-treasury-image-shrink_800_800/0/1705957318840?e=1708365600&v=beta&t=-9V5BfhcXouTr3vIabNgeFpvALsj4NvraZlmYSzeZ6E" width="200px">
+                <h3>Introduction to Web Development with HTML, CSS, JavaScript</h3>
+                <p>Throughout the course, I delved into the fundamentals of HTML, CSS, and JavaScript, gaining a solid foundation in building dynamic and interactive websites. </p>
+            </div>
+            
+        </div>
     </div>
     <div id="about-section">
         <div id="contact">
-            <a target="_blank" href="https://www.facebook.com/mohamedamine.bahassou.1/"> <img class="img_resp" src="https://www.edigitalagency.com.au/wp-content/uploads/facebook-icon-white-png.png" width="20px"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/mohamed-amine-bahassou/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png" width="20px"></a>
-            <p style="color: white; font-size: x-small;">&copy; Bahassou-Mohamed-Amine</p>
+            <a  target="_blank" href="https://www.facebook.com/mohamedamine.bahassou.1/"> <i class="fa-brands fa-facebook" ></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/mohamed-amine-bahassou/"><i class="fa-brands fa-linkedin" ></i></a>
+            <p style="font-size: x-small;">&copy; Bahassou-Mohamed-Amine</p>
         </div>
     </div>
 </body>
