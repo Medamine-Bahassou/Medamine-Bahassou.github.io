@@ -3,22 +3,56 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'cairo';
+    font-family: 'Poppins';
     scroll-behavior: smooth;
+    transition: .2s;
+}
+
+:root{
+    --primary-color: #ffffff ; 
+    --secondary-color: #212121 ; 
+    --white-color : #ffffff ; 
 }
 
 
+.dark-theme{
+    --primary-color: #000106 ; 
+    --secondary-color: #fff ; 
+    --white-color : gray ; 
+
+}
+
+
+::selection {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+  }
+#projects p::selection{
+    color : white ; 
+    background: black;
+}
+
+#cover img{
+    border : 2px solid var(--secondary-color) ; 
+    border-radius: 50%;
+    filter: drop-shadow(30px 0px 150px  var(--secondary-color));
+}
+
+  h1{
+    text-align: center;
+  }
 #navbar{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--secondary-color);
     width: 100%;
     position: fixed; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: var(--primary-color);
     padding-left: 50px;
     padding-right: 50px;
     z-index: 9999;
+    
 }
 #btn ul{
     display: flex;
@@ -32,23 +66,30 @@
     margin-bottom: 2px;
     padding-bottom: 2px;
 }
+
+#btn li:active{
+    color: rgba(255, 0, 0, 0.623);
+}
+
 #btn a{
-    color : rgb(255, 255, 255) ; 
+    color : var(--primary-color) ; 
 }
 #btn a:hover {
-    color : rgba(255, 255, 255, 0.733) ; 
+    color : var(--primary-color) ; 
 
 }
 
 #btn  li:hover{
     cursor: pointer;
+    border-bottom: 2px rgb(255, 255, 255);
 
 
 }
 
  #home{
     min-height: 100vh;
-    
+    background: var(--primary-color);
+    color: var(--secondary-color);
  }
 
 
@@ -60,28 +101,38 @@
     padding-right: 10%;
 }
 
+#hello h1{
+    font-size: xxx-large;
+    text-align: left;
+}
+
+
+
+
+
 #skills-section{
     min-height: 100vh;
-    align-items: center;
-    text-align: center;
-    padding-top: 5%;
+    display: flex ;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 #skills{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 2%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
 }
 
 #skill{
     border-radius: 20px;
     border:2px solid rgb(206, 205, 205);
-    background-color: rgb(241, 245, 248);
+    background-color: var(--primary-color);
     box-shadow: 0 3px 10px gray;
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
     align-items: center;
     overflow: hidden;
     margin: 10px;
@@ -91,32 +142,33 @@
     flex-direction: column;
     justify-content: center;
     font-size: 80%;
+    text-align: center;
 }
 #skill:hover{
     transform: scale(1.02);
 }
 #project-section{
     min-height: 100vh;
+    display: flex ;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
-#project-section h1{
-    text-align: center;
-    padding-top: 5%;
 
-}
 #projects{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        min-height: 100vh;
 
 }
 
 #project{
     background-color: rgb(49, 49, 49);
-    border: 0.5px sorgba(0, 30, 58, 0.438);
-    box-shadow: 0 10px 10px rgba(0, 13, 26, 0.479) ;
-    border-radius: 8px;
+    box-shadow: 0 0 50px 2px gray;
+    border : 2px solid white ; 
+    border-radius: 20px;
     height: 50vh;
     flex-basis: 25%;
     overflow: hidden;
@@ -146,19 +198,23 @@
     padding-top: 10%;
     position: absolute;
     padding: 5%;
-    color: rgba(0, 0, 0, 0);
-    transition: .2s;
+    color: rgba(255, 255, 255, 0);
+    transition: .7s;
 }
+
 #project p:hover{
     top: 0 ;
     padding-top: 10%;
     position: absolute;
-    background-color:  rgba(255, 255, 255, 0.582);
+    background-color:  rgba(255, 255, 255, 0.658);
     padding: 5%;
     height: 100%;
     color: black;
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(1rem);
     cursor: pointer;
+}
+#description{
+    padding: 0;
 }
 
 #project source{
@@ -167,19 +223,78 @@
 }
 
 
+.github {
+    position: absolute;
+    bottom:0 ;
+    right: 0;
+    padding-right: 5%;
+    padding-bottom: 5%; 
+    font-size: 25px;
+}
+
+
+
+#certification-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+#certifications{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#certification{
+    margin: 20px;
+    min-height: 50vh;
+    max-height: 70cap;
+    width: 300px;
+    overflow: hidden;
+    border : 2px solid white ; 
+    border-radius: 20px;
+    box-shadow: 0 0 50px 2px gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+#certification:hover{
+    transform: translate(0,-5px);
+}
+
+
+
+
 
 #about-section{
-    background-color: rgb(0, 0, 0);
+    background-color: var(--secondary-color);
     min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background : linear-gradient(360deg,rgb(172, 167, 167) 80%,var(--primary-color))  ;
+
 }
 
-#contact img{
-    margin-left: 20px;
+#contact a{
+    margin: 20px;
     cursor: pointer;
+    color : var(--secondary-color) ; 
+}
+#contact{
+    color  : var(--secondary-color) ; 
 }
 
 
@@ -189,32 +304,22 @@
 
 
 
-
-@media screen and (max-width:  720px) {
+@media screen and (max-width: 800px) {
     
     #navbar h1{
         font-size: medium;
     }
     #logo h1{
-        color: red;
-        animation-name:test;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
+        color: var(--primary-color);
     }
-    @keyframes test {
-        0%{
-            color : white ; 
-        }
-        30%{
-            color: rgb(255, 0, 0) ; 
-        }
-        100%{
-            color: white;
-        }
-    }
+    
     #navbar{
         display: flex;
         flex-direction: column;
+    }
+
+    #btn{
+        font-size: small;
     }
     .container{
         display: flex ; 
@@ -224,29 +329,34 @@
     #hello{
         margin-bottom: 80px;
     }
+    #hello h1{
+        font-size: xx-large;
+        text-align: left;
+    }
+   
     #skills{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
+       
     }
     #skills-section{
-        padding-top: 150px;
+        padding-top: 20%;
     }
     #skill{
-        width: auto;
+        width: 180px;
         align-items: center;
         overflow: hidden;
         margin: 10px;
         padding: 10px;
-        height: auto;
+        height: 100px;
     }
     #project-section{
-        padding-top: 150px;
+        padding-top: 20%;
     }
     #project{
         flex-basis: 80%;    
     }
     
+    
 
 }
+
+
