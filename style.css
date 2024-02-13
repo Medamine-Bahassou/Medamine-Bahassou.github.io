@@ -7,19 +7,28 @@
     scroll-behavior: smooth;
     transition: .2s;
 }
+span{
+    font-size: small; 
+    font-weight: 100;
+}
 
 :root{
     --primary-color: #ffffff ; 
     --secondary-color: #212121 ; 
-    --white-color : #ffffff ; 
 }
 
 
 .dark-theme{
     --primary-color: #000106 ; 
     --secondary-color: #fff ; 
-    --white-color : gray ; 
+}
 
+.fa-solid.fa-moon:hover ,.fa-solid.fa-sun:hover {
+    transform: rotate(-30deg);
+}
+
+.fa-solid.fa-hands:hover{
+    transform: rotate(30deg);
 }
 
 
@@ -36,6 +45,12 @@
     border : 2px solid var(--secondary-color) ; 
     border-radius: 50%;
     filter: drop-shadow(30px 0px 150px  var(--secondary-color));
+    cursor: pointer;
+    transition: .2s;
+}
+
+#cover img:hover{
+    transform:scale(1.01);
 }
 
   h1{
@@ -67,17 +82,14 @@
     padding-bottom: 2px;
 }
 
-#btn li:active{
-    color: rgba(255, 0, 0, 0.623);
-}
 
 #btn a{
     color : var(--primary-color) ; 
 }
 #btn a:hover {
-    color : var(--primary-color) ; 
-
+    color : gray; 
 }
+
 
 #btn  li:hover{
     cursor: pointer;
@@ -131,8 +143,8 @@
     border:2px solid rgb(206, 205, 205);
     background-color: var(--primary-color);
     box-shadow: 0 3px 10px gray;
-    height: 150px;
-    width: 150px;
+    height: 9cqmax;
+    width:9cqmax;
     align-items: center;
     overflow: hidden;
     margin: 10px;
@@ -140,13 +152,21 @@
     transition:.2s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 80%;
     text-align: center;
 }
 #skill:hover{
     transform: scale(1.02);
+    cursor: pointer;
+    background: linear-gradient(180deg , var(--primary-color)  80%, rgba(241, 233, 233, 0.473));
 }
+
+#skill h3{
+    font-size:small;
+}
+
+
 #project-section{
     min-height: 100vh;
     display: flex ;
@@ -175,6 +195,7 @@
     position: relative;
     margin: 20px;
     text-align: center;
+    padding: 0;
 }
 
 #project img{
@@ -189,17 +210,22 @@
     display: flex;
     justify-content: center;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 #project p{
     width: 100%;
     height: 50vh;
     top: 0 ;
+    text-align: left;
     padding-top: 10%;
     position: absolute;
     padding: 5%;
     color: rgba(255, 255, 255, 0);
     transition: .7s;
+    font-weight:bold;
+    margin: 0;
 }
 
 #project p:hover{
@@ -212,9 +238,16 @@
     color: black;
     backdrop-filter: blur(1rem);
     cursor: pointer;
+    margin: 0;
 }
+
 #description{
     padding: 0;
+    margin: 0;
+}
+
+#description span {
+    list-style:circle;
 }
 
 #project source{
@@ -341,7 +374,7 @@
         padding-top: 20%;
     }
     #skill{
-        width: 180px;
+        width: 10em;
         align-items: center;
         overflow: hidden;
         margin: 10px;
