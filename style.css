@@ -360,9 +360,7 @@ span{
 
 
 @media screen and (max-width: 800px) {
-    *{
-        font-size: 2cqmax;
-    }
+   
     #title{
         font-size: 5cqmax;
     }
