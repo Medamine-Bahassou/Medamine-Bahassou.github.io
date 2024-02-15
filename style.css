@@ -1,3 +1,6 @@
+
+
+/*******************/
 *{
     padding: 0;
     margin: 0;
@@ -6,10 +9,19 @@
     font-family: 'Poppins';
     scroll-behavior: smooth;
     transition: .2s;
+    font-size: 1.5cqmax;
 }
+#title{
+    font-size: 2.5cqmax;
+    color: var(--secondary-color);
+
+}
+
+
 span{
     font-size: small; 
     font-weight: 100;
+    font-size: 1cqmax;
 }
 
 :root{
@@ -47,6 +59,7 @@ span{
     filter: drop-shadow(30px 0px 150px  var(--secondary-color));
     cursor: pointer;
     transition: .2s;
+    width: 20cqmax;
 }
 
 #cover img:hover{
@@ -67,7 +80,7 @@ span{
     padding-left: 50px;
     padding-right: 50px;
     z-index: 9999;
-    
+    box-shadow: 0 1px 20px 2px rgb(80, 80, 80);
 }
 #btn ul{
     display: flex;
@@ -77,7 +90,7 @@ span{
     margin-left: 10px;
     list-style: none;
     color: rgb(252, 252, 252);
-    margin-left: 20px;
+    margin-left: 1.2cqmax;
     margin-bottom: 2px;
     padding-bottom: 2px;
 }
@@ -99,23 +112,28 @@ span{
 }
 
  #home{
-    min-height: 100vh;
+    min-height: 100vmin;
     background: var(--primary-color);
     color: var(--secondary-color);
- }
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vmax;
+
+}
 
 
 .container{
     display: flex ; 
     justify-content: space-between;
-    padding-top: 150px;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 #hello h1{
-    font-size: xxx-large;
     text-align: left;
+    font-size: 3cqmax;
 }
 
 
@@ -142,7 +160,7 @@ span{
     border-radius: 20px;
     border:2px solid rgb(206, 205, 205);
     background-color: var(--primary-color);
-    box-shadow: 0 3px 10px gray;
+    box-shadow: 0 3px 10px #808080;
     height: 9cqmax;
     width:9cqmax;
     align-items: center;
@@ -153,7 +171,7 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 80%;
+    font-size:1cqmax ; 
     text-align: center;
 }
 #skill:hover{
@@ -163,7 +181,7 @@ span{
 }
 
 #skill h3{
-    font-size:small;
+    font-size:120%;
 }
 
 
@@ -226,6 +244,7 @@ span{
     transition: .7s;
     font-weight:bold;
     margin: 0;
+    font-size: 1cqmax;
 }
 
 #project p:hover{
@@ -289,7 +308,7 @@ span{
     margin: 20px;
     min-height: 50vh;
     max-height: 70cap;
-    width: 300px;
+    max-width: 50vh;
     overflow: hidden;
     border : 2px solid white ; 
     border-radius: 20px;
@@ -304,6 +323,9 @@ span{
 }
 #certification:hover{
     transform: translate(0,-5px);
+}
+#certification img{
+    width: 15cqmax;
 }
 
 
@@ -338,57 +360,81 @@ span{
 
 
 @media screen and (max-width: 800px) {
+    *{
+        font-size: 2cqmax;
+    }
+    #title{
+        font-size: 5cqmax;
+    }
+    #title i{
+        font-size: 5cqmax;
+    }
     
     #navbar h1{
         font-size: medium;
     }
+    #cover img{
+        width: 30cqmax;
+    }
     #logo h1{
         color: var(--primary-color);
     }
-    
     #navbar{
         display: flex;
         flex-direction: column;
-    }
-
-    #btn{
         font-size: small;
     }
+   
+    
     .container{
         display: flex ; 
         flex-direction: column;
         align-items: center;
     }
+    #home{
+        padding: 150px 0;
+    }
     #hello{
         margin-bottom: 80px;
     }
     #hello h1{
-        font-size: xx-large;
-        text-align: left;
+        font-size: 4.5cqmax;
     }
-   
-    #skills{
-       
+    #hello h3 {
+        font-size: 120%;
     }
+    #hello p{
+        font-size: 80%;
+    }
+    
     #skills-section{
         padding-top: 20%;
     }
     #skill{
-        width: 10em;
+        width: 20cqmax;
         align-items: center;
         overflow: hidden;
         margin: 10px;
         padding: 10px;
         height: 100px;
+        font-size: 1.6cqmax;
     }
     #project-section{
         padding-top: 20%;
     }
+   
     #project{
         flex-basis: 80%;    
     }
-    
-    
+    #project p{
+        font-size: 2.2cqmax;
+    }
+    span{
+        font-size: 1.5cqmax;
+    }
+    #certification img{
+        width: 30cqmax;
+    }
 
 }
 
