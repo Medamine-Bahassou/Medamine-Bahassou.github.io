@@ -17,6 +17,46 @@
 
 
 /*******************/
+
+/*zoom certificate*/
+.contain{
+    position: relative;
+}
+
+.contain .popup-image{
+    position: fixed;
+    top: 1.5cqmax; left: 0;
+    background: rgba(0, 0, 0, 0.705);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    
+}
+
+.popup-image span{
+    position: absolute;
+    top: 0;right: 0;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+.contain .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border : 5px solid white ; 
+    border-radius: 5px;
+    width: 48cqmax;
+    object-fit: cover;
+}
+/*******************/
+
+
 *{
     padding: 0;
     margin: 0;
