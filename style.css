@@ -439,7 +439,6 @@ span{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: var(--primary-color);
         padding-left: 50px;
         padding-right: 50px;
         z-index: 9999;
@@ -460,7 +459,6 @@ span{
     
     
     #btn a{
-        color : var(--primary-color) ; 
         font-size: small;
     }
     #btn a:hover {
@@ -497,9 +495,7 @@ span{
     #cover img{
         width: 100%;
     }
-    #logo h1{
-        color: var(--primary-color);
-    }
+    
     #navbar{
         display: flex;
         flex-direction: column;
