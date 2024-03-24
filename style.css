@@ -132,13 +132,13 @@ span{
     text-align: center;
   }
 #navbar{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     width: 100%;
     position: fixed; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     padding-left: 50px;
     padding-right: 50px;
     z-index: 9999;
@@ -159,7 +159,7 @@ span{
 
 
 #btn a{
-    color : var(--primary-color) ; 
+    color : var(--secondary-color) ; 
 }
 #btn a:hover {
     color : gray; 
