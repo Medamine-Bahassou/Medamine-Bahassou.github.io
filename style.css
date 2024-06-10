@@ -359,6 +359,7 @@ span{
 }
 
 #project a {
+    text-decoration: none;
     color: blue;
 }
 #description{
