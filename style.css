@@ -358,6 +358,9 @@ span{
     margin: 0;
 }
 
+#project a {
+    color: blue;
+}
 #description{
     padding: 0;
     margin: 0;
@@ -450,6 +453,7 @@ span{
 #contact{
     color  : var(--secondary-color) ; 
 }
+
 
 
 
