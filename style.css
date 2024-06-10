@@ -358,7 +358,11 @@ span{
     margin: 0;
 }
 
-#project a {
+#project a{
+    text-decoration: none;
+    color: blue;
+}
+#project a:visited{
     text-decoration: none;
     color: blue;
 }
