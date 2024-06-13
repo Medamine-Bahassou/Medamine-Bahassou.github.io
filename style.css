@@ -131,19 +131,19 @@ span{
 
 @keyframes cover_anim {
     0% {
-        border-radius: 45% 40% 50% 90%;
+        border-radius: 50% 60% 50% 70%;
     }
     25% {
-        border-radius: 50% 50% 60% 80%;
+        border-radius: 50% 70% 60% 80%;
     }
     50% {
-        border-radius: 40% 40% 90% 60%;
+        border-radius: 70% 60% 90% 60%;
     }
     75% {
-        border-radius: 45% 60% 50% 70%;
+        border-radius: 60% 65% 50% 70%;
     }
     100% {
-        border-radius: 50% 40% 50% 70%;
+        border-radius: 65% 70% 50% 70%;
     }
 }
 
