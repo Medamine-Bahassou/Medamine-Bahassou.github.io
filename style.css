@@ -239,6 +239,7 @@ span{
 
 
 #skills-section{
+    padding-top: 50px;
     min-height: 100vh;
     display: flex ;
     flex-direction: column; 
@@ -284,6 +285,7 @@ span{
 
 
 #project-section{
+    padding-top: 50px;
     min-height: 100vh;
     display: flex ;
     flex-direction: column; 
@@ -397,6 +399,7 @@ span{
 
 
 #certification-section{
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
