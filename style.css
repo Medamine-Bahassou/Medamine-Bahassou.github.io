@@ -394,7 +394,7 @@ span{
 .demo {
     position: absolute;
     bottom:0 ;
-    right: 30px;
+    right: 30;
     padding-right: 5%;
     padding-bottom: 5%; 
     font-size: 25px;
