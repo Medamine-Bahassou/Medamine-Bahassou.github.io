@@ -115,8 +115,10 @@ span{
     width:50%;
 }
 
+
 #cover img{
-    
+    user-select: none;
+
     border : 2px solid var(--secondary-color) ; 
     border-radius: 10% 30% 50% 70%;
     animation-name: cover_anim;
@@ -644,7 +646,9 @@ span{
     position: absolute;
     bottom: 0;
     right: 0 ;   
+    pointer-events: none;
 }
+
 
 /* Styles for reset button */
 #reset {
