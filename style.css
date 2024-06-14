@@ -624,3 +624,6 @@ span{
 }
 
 
+.website-counter-container a{
+    color: rgba(255, 255, 255, 0)
+}
