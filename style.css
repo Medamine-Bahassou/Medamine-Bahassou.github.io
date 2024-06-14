@@ -614,3 +614,13 @@ span{
     }
 }
 
+
+.website-counter-container{
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0 ;   
+    pointer-events: none;
+}
+
+
