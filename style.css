@@ -625,5 +625,6 @@ span{
 
 
 .website-counter-container a{
+    text-decoration: none;
     color: rgba(255, 255, 255, 0)
 }
