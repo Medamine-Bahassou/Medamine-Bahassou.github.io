@@ -353,10 +353,10 @@ span{
     top: 0 ;
     padding-top: 10%;
     position: absolute;
-    background-color:  rgba(255, 255, 255, 0.658);
+    background-color: var(--primary-color); /* Change 0.5 to your desired opacity value */
     padding: 5%;
     height: 100%;
-    color: black;
+    color: var(--secondary-color);
     backdrop-filter: blur(1rem);
     cursor: pointer;
     margin: 0;
@@ -461,10 +461,10 @@ span{
 #contact a{
     margin: 20px;
     cursor: pointer;
-    color : var(--secondary-color) ; 
+    color : black ; 
 }
 #contact{
-    color  : var(--secondary-color) ; 
+    color  : black ; 
 }
 
 
