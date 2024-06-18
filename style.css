@@ -66,11 +66,10 @@
     scroll-behavior: smooth;
     transition: .2s;
     font-size: 20px;
-    /* font-size: 40px; pour  width = 2560 */
 }
+
 #title{
-    font-size: 200%;
-    color: var(--secondary-color);
+    font-size: large;
 
 }
 
@@ -603,9 +602,7 @@ span{
 
 
 @media (min-width: 1440px) {
-    *{
-        font-size: 40px;
-    }
+    
     #hello p {
         font-size: x-large;
     }
@@ -613,6 +610,9 @@ span{
         font-size: 1em;
     }
 }
+
+
+
 
 
 .website-counter-container{
