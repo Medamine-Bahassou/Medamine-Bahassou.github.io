@@ -622,7 +622,7 @@ span{
 @media (min-width: 1440px) {
     
     #hello p {
-        font-size: x-large;
+        font-size: medium;
     }
     #project p{       
         font-size: 1em;
