@@ -462,7 +462,7 @@ span{
 #contact a{
     margin: 20px;
     cursor: pointer;
-    color : black ; 
+    color : var(--secondary-color) ; 
 }
 #contact{
     color  : black ; 
