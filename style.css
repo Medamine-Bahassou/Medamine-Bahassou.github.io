@@ -110,7 +110,6 @@ span{
 }
 
 #cover{
-    text-align: right;
     width:50%;
 }
 
@@ -446,7 +445,7 @@ span{
 
 
 
-#about-section{
+#last-section{
     background-color: var(--secondary-color);
     min-height: 30vh;
     display: flex;
@@ -456,7 +455,10 @@ span{
     background : linear-gradient(360deg,rgb(172, 167, 167) 80%,var(--primary-color))  ;
 
 }
-
+#contact{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 #contact a{
     margin: 20px;
     cursor: pointer;
@@ -464,6 +466,19 @@ span{
 }
 #contact{
     color  : black ; 
+}
+
+#contact .facebook:hover{
+    color: blue;
+}
+#contact .cv:hover{
+    color: rgb(0, 255, 136);
+}
+#contact .github:hover{
+    color: purple;
+}
+#contact .linkedin:hover{
+    color: rgb(0, 102, 255);
 }
 
 
@@ -475,6 +490,12 @@ span{
 
 
 @media screen and (max-width: 800px) {
+    #cover{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
     #navbar{
         width: 100%;
         position: fixed; 
@@ -534,10 +555,7 @@ span{
     #navbar h1{
         font-size: medium;
     }
-    #cover img{
-        width: 100%;
-    }
-    
+
     #navbar{
         display: flex;
         flex-direction: column;
